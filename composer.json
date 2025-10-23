@@ -1,0 +1,19 @@
+{
+    "name": "josejunior/jauturismo",
+    "description": "projeto da aula de programação para internet do curso de GTI da FATEC JAHU",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    },
+    "authors": [
+        {
+            "name": "jose navarro alves junior",
+            "email": "jose.alves57@fatec.sp.gov.br"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {}
+}
