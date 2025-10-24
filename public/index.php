@@ -1,16 +1,12 @@
-<!doctype html>
-<html lang="pt-br">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Jaú Turismo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href="/public/css/style.css">
-</head>
-  <body>
-    <h1>Hello, world!</h1>
-    <p>Aqui é o Paulooooo maluco!x</p>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-    <script src="/public/js/script.js"></script>
-</body>
-</html>
+<?php
+// Importa o autoload do Composer para carregar as rotas
+require __DIR__ . '/../vendor/autoload.php';
+
+// Obtem a URL do navegador
+$url = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
+
+if($url == "/") {
+    require __DIR__ . '/../app/Views/home.php';
+}
+
+?>

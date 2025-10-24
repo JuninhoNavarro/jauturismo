@@ -19,3 +19,10 @@ Criar uma pasta para o projeto e rodar no cmd:
 
 # Iniciar o servidor do PHP
     php -S localhost:8000 -t public
+
+
+# Quando abre o projeto em um novo pc
+    composer install
+
+# Se der erro de Rota (404)
+    composer dump-autoload
