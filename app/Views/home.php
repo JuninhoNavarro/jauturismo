@@ -7,7 +7,10 @@ echo "Home.php" . "<b> Olá Mundo! </b>";
 <head>
     <meta charset="UTF-8"> <!-- define o padrão de caracteres (acentos, ç, etc.) -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jaú Turismo</title><!-- Título que aparece na aba do navegador -->
+
+
+    <!-- colocamos a variavel $title criada em /public/index.php -->
+    <title> <?= $title ?></title><!-- Título que aparece na aba do navegador -->
 
     <!-- importação de fontes do google fonts -->
     <link
@@ -49,6 +52,11 @@ echo "Home.php" . "<b> Olá Mundo! </b>";
 
     <!--texto de introdução do site -->
     <h1 class="introducao">Bem-vindo a Jaú – Onde a história encontra a hospitalidade</h1> <!-- titulo -->
+
+    <!-- variavel criada $lenda criada em /public/index.php  -->
+    <h2> <?= $lenda ?> </h2>
+
+
     <p class="introducao-paragrafo">Neste portal, você vai descobrir os principais pontos turísticos, eventos,
         curiosidades e experiências que fazem de Jaú um lugar único. Prepare-se para explorar casarões centenários,
         caminhar por trilhas de fé, saborear pratos típicos e se apaixonar por cada detalhe desta cidade vibrante.</p>
